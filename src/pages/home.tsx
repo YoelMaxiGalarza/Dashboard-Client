@@ -16,6 +16,10 @@ const Home = () => {
                 <PieChart title="Total customers" value={5684} series={[75, 25]} colors={['#275be8', '#c4e8ef']}/>
                 <PieChart title="Properties for Cities" value={5} series={[75, 25]} colors={['#475be8', '#e4e8ef']}/>
             </Box>
+            <Stack mt="25px" gap={4} width="100%" direction={{xs: 'column', lg: 'row'}}>
+                <TotalRevenue />
+                <PropertyReferals />
+            </Stack>
         </Box>
     );
 };
